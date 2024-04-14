@@ -1,7 +1,17 @@
+"""
+Python 3.11 code for solving CSE 516-50 programming assignment two
+
+Author: David Mayo
+Code available at
+https://github.com/davidmayo/cse516_assignment2/blob/main/script.py
+
+A relatively recent version of matplotlib is required to run this code.
+"""
+
 import matplotlib.pyplot as plt
 
 
-# See report for explanation of this calculation
+# See report for explanation of this function
 def utilization(
     frame_size: float,
     propagation_speed: float,
@@ -41,7 +51,7 @@ ax.set_title(
     f"Utilization (Study 1)\n\n{frame_size = :,.0f} bits\n"
     + f"{transmission_rate = :,.0f} bps\n{propagation_speed = :,.0f} m/s"
 )
-# fig.savefig("./study1.png", dpi=300)
+fig.savefig("./study1.png", dpi=300)
 plt.show()
 
 
